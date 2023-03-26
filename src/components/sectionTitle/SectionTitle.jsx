@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const SectionTitle = ({ title, children }) => {
   return (
     <section>
@@ -8,5 +8,8 @@ const SectionTitle = ({ title, children }) => {
     </section>
   );
 };
-
+SectionTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
 export default SectionTitle;
