@@ -49,7 +49,7 @@ export class App extends Component {
           />
         </SectionTitle>
         <SectionTitle title="Statistics">
-          {this.state.good + this.state.neutral + this.state.bad === 0 ? (
+          {this.totaCalc() === 0 ? (
             <Notification message="There is no feedback" />
           ) : (
             <Statistics
