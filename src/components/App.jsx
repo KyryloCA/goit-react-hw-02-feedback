@@ -20,7 +20,7 @@ export class App extends Component {
   };
 
   totaCalc = () => {
-    return [this.state.good + this.state.neutral + this.state.bad];
+    return this.state.good + this.state.neutral + this.state.bad;
   };
 
   onLeaveFeedback = buttonName => {
@@ -44,7 +44,7 @@ export class App extends Component {
       >
         <SectionTitle title="Please leave feedback">
           <FeedbackOptions
-            options={this.state}
+            // options={this.state}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </SectionTitle>
